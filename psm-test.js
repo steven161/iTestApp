@@ -542,9 +542,13 @@ const app = {
       reviewItem.className = "card mb-3";
       reviewItem.innerHTML = `
                 <div class="card-body">
-                    <h6 class="card-title">Question ${index + 1}</h6>
+                    <h6 class="card-title">
+                      Question ${index + 1}
+                      <button class="btn btn-primary btn-primary-custom copy-btn" data-question-index="${index}">
+                            Copy
+                      </button>
+                    </h6>
                     <p class="card-text mb-3">${question.question}</p>
-                    
                     <div class="mb-3">
                         <strong>Your Answer:</strong>
                         <div class="${isCorrect ? "correct" : "incorrect"} p-2 rounded mt-1">
@@ -564,7 +568,83 @@ const app = {
       container.appendChild(reviewItem);
     });
 
+    // Bind copy handlers after review cards are rendered.
+    const copyButtons = container.querySelectorAll(".copy-btn");
+    copyButtons.forEach((button) => {
+      button.addEventListener("click", (e) => {
+        const questionIndex = parseInt(
+          e.currentTarget.dataset.questionIndex,
+          10,
+        );
+        this.copyQuestionToClipboard(questionIndex);
+      });
+    });
+
     window.scrollTo(0, 0);
+  },
+
+  // Copy question and choices for a review item.
+  async copyQuestionToClipboard(questionIndex) {
+    const qData = this.currentTest.questions[questionIndex];
+    if (!qData || !qData.original) {
+      alert("Could not copy this question.");
+      return;
+    }
+
+    const question = qData.original;
+    await this.copyQuestionAndChoicesToClipboard(
+      question.question,
+      question.choices,
+    );
+  },
+
+  // Copy question and choices text to clipboard.
+  async copyQuestionAndChoicesToClipboard(questionText, choices) {
+    const choicesText = Object.entries(choices || {})
+      .map(([key, value]) => `${key}: ${value}`)
+      .join("\n");
+
+    const textToCopy = `Question: ${questionText}\n\nChoices:\n${choicesText}`;
+
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(textToCopy);
+      } else {
+        const tempTextArea = document.createElement("textarea");
+        tempTextArea.value = textToCopy;
+        document.body.appendChild(tempTextArea);
+        tempTextArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempTextArea);
+      }
+
+      alert("Question and choices copied to clipboard.");
+    } catch (error) {
+      console.error("Copy failed:", error);
+      alert("Unable to copy to clipboard.");
+    }
+  },
+
+  // Bind copy buttons in stats views to the currently rendered wrong answers list.
+  bindStatsCopyButtons(container, wrongAnswers) {
+    const copyButtons = container.querySelectorAll(".stats-copy-btn");
+    copyButtons.forEach((button) => {
+      button.addEventListener("click", async (e) => {
+        e.stopPropagation();
+        const wrongIndex = parseInt(e.currentTarget.dataset.wrongIndex, 10);
+        const answer = wrongAnswers[wrongIndex];
+
+        if (!answer) {
+          alert("Could not copy this question.");
+          return;
+        }
+
+        await this.copyQuestionAndChoicesToClipboard(
+          answer.text,
+          answer.choices,
+        );
+      });
+    });
   },
 
   // Format answer display
@@ -687,14 +767,19 @@ const app = {
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="${headingId}">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}">
-                                <span class="badge bg-danger me-2">${qId}</span>
+                          <span class="badge bg-danger me-2">${qId}</span>
                                 <span class="text-truncate">${answer.text.substring(0, 60)}...</span>
                                 <span class="badge bg-secondary ms-2">${category}</span>
                             </button>
                         </h2>
                         <div id="${collapseId}" class="accordion-collapse collapse" data-bs-parent="#wrongAnswersAccordion">
                             <div class="accordion-body">
-                                <p><strong>Full Question:</strong> ${answer.text}</p>
+                                <p>
+                                  <strong>Full Question:</strong> ${answer.text}
+                            <button class="btn btn-primary btn-primary-custom stats-copy-btn" data-wrong-index="${index}">
+                                        Copy
+                                  </button>
+                                </p>
                                 <p><strong>Category:</strong> <span class="badge bg-secondary">${category}</span></p>
                                 <p><strong>Your Answer:</strong></p>
                                 <div class="incorrect p-2 rounded mb-3">
@@ -795,6 +880,8 @@ const app = {
       });
     }
 
+    this.bindStatsCopyButtons(container, stats.wrongAnswers);
+
     window.scrollTo(0, 0);
   },
 
@@ -825,14 +912,19 @@ const app = {
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="${headingId}">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}">
-                                <span class="badge bg-danger me-2">${qId}</span>
+                          <span class="badge bg-danger me-2">${qId}</span>
                                 <span class="text-truncate">${answer.text.substring(0, 60)}...</span>
                                 <span class="badge bg-secondary ms-2">${category}</span>
                             </button>
                         </h2>
                         <div id="${collapseId}" class="accordion-collapse collapse" data-bs-parent="#wrongAnswersAccordion">
                             <div class="accordion-body">
-                                <p><strong>Full Question:</strong> ${answer.text}</p>
+                          <p>
+                            <strong>Full Question:</strong> ${answer.text}
+                            <button class="btn btn-primary btn-primary-custom stats-copy-btn" data-wrong-index="${index}">
+                              Copy
+                            </button>
+                          </p>
                                 <p><strong>Category:</strong> <span class="badge bg-secondary">${category}</span></p>
                                 <p><strong>Your Answer:</strong></p>
                                 <div class="incorrect p-2 rounded mb-3">
@@ -912,6 +1004,8 @@ const app = {
                 </table>
             </div>
         `;
+
+    this.bindStatsCopyButtons(container, stats.wrongAnswers);
   },
 
   // Clear statistics
