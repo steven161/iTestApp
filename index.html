@@ -43,11 +43,10 @@
 
                     <!-- Start Index Input (Order Mode Only) -->
                     <div id="startIndexContainer" class="mb-4 mode-input d-none">
-                        <label for="startIndexInput" class="form-label">Start Question Index:</label>
-                        <div class="input-group" style="max-width: 250px; margin: 0 auto;">
+                        <label for="startIndexInput" class="form-label">Start Index:</label>
+                        <div class="input-group" style="max-width: 200px; margin: 0 auto;">
                             <input type="number" id="startIndexInput" class="form-control" 
                                    min="1" max="240" value="1" placeholder="1-240">
-                            <span class="input-group-text">of 250</span>
                         </div>
                         <small class="text-muted d-block mt-2">Choose starting question (1-240)</small>
                         <div id="start-index-error" class="alert alert-danger mt-2 d-none" role="alert"></div>
@@ -55,11 +54,10 @@
                     
                     <!-- Question Count Input -->
                     <div class="mb-4">
-                        <label for="questionCountInput" class="form-label">Questions per test:</label>
+                        <label for="questionCountInput" class="form-label">Questions Number:</label>
                         <div class="input-group" style="max-width: 200px; margin: 0 auto;">
                             <input type="number" id="questionCountInput" class="form-control" 
                                    min="1" max="250" value="5">
-                            <span class="input-group-text">/250</span>
                         </div>
                         <small class="text-muted d-block mt-2">Choose between 1 and 250 questions</small>
                         <div id="question-count-error" class="alert alert-danger mt-2 d-none" role="alert"></div>
