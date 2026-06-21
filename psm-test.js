@@ -68,6 +68,11 @@ const app = {
       submitBtn.addEventListener("click", () => this.submitTest());
     }
 
+    const hintBtn = document.getElementById("hint-btn");
+    if (hintBtn) {
+      hintBtn.addEventListener("click", () => this.toggleHintInfo());
+    }
+
     // Dashboard buttons - using view to find buttons
     const dashboardView = document.getElementById("dashboard-view");
     if (dashboardView) {
@@ -300,6 +305,16 @@ const app = {
       ),
       correctAnswers: correctAnswers,
     };
+  },
+
+  // Toggle hint visibility
+  toggleHintInfo() {
+    const hintInfo = document.getElementById("hint-info");
+    if (!hintInfo) {
+      return;
+    }
+
+    hintInfo.classList.toggle("d-none");
   },
 
   // Display current question

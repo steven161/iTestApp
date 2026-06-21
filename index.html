@@ -84,7 +84,13 @@
                     <!-- Progress Bar -->
                     <div class="progress-container">
                         <div class="question-number">
-                            Question <span id="current-question">1</span> of <span id="total-questions">10</span> - <span id="answer-for-test" class="for-test">A</span> - <span id="id-for-test"  class="for-test">A</span> - <span id="category-for-test"  class="for-test">A</span>
+                            Question <span id="current-question">1</span> of <span id="total-questions">10</span>
+                            <button class="btn btn-primary btn-primary-custom" id="hint-btn">
+                                Hint
+                            </button>
+                        </div>
+                        <div class="question-number d-none" id="hint-info">
+                            <span id="answer-for-test" class="for-test">A</span> - <span id="id-for-test"  class="for-test">A</span> - <span id="category-for-test"  class="for-test">A</span>
                         </div>
                         <div class="progress" style="height: 6px;">
                             <div class="progress-bar" id="progress-bar" style="width: 10%"></div>
