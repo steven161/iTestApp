@@ -5,139 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PSM Test - Random Multi-Choice Test Generator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .navbar-custom {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1rem 0;
-        }
-        
-        .container-main {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem 0;
-        }
-        
-        .card-custom {
-            border: none;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-        }
-        
-        .btn-primary-custom {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: none;
-        }
-        
-        .btn-primary-custom:hover {
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-        }
-        
-        .question-number {
-            font-size: 0.9rem;
-            color: #6c757d;
-            margin-bottom: 0.5rem;
-        }
-        
-        .answer-option {
-            text-align: left;
-            padding: 1rem;
-            margin: 0.5rem 0;
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .answer-option:hover {
-            background-color: #f8f9fa;
-            border-color: #667eea;
-        }
-        
-        .answer-option input[type="radio"],
-        .answer-option input[type="checkbox"] {
-            margin-right: 0.75rem;
-        }
-        
-        .answer-option.selected {
-            background-color: #e7f3ff;
-            border-color: #667eea;
-        }
-        
-        .correct {
-            background-color: #d4edda;
-            border-color: #28a745;
-        }
-        
-        .incorrect {
-            background-color: #f8d7da;
-            border-color: #dc3545;
-        }
-        
-        .result-badge {
-            font-size: 1.5rem;
-            font-weight: bold;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            display: inline-block;
-            margin: 1rem 0;
-        }
-        
-        .result-badge.pass {
-            background-color: #d4edda;
-            color: #155724;
-        }
-        
-        .result-badge.fail {
-            background-color: #f8d7da;
-            color: #721c24;
-        }
-        
-        .stats-item {
-            padding: 1.5rem;
-            background: white;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        
-        .stats-item h5 {
-            color: #667eea;
-            margin-bottom: 0.5rem;
-        }
-        
-        .stats-value {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #764ba2;
-        }
-        
-        .progress-container {
-            margin: 1.5rem 0;
-        }
-        
-        .view-hidden {
-            display: none;
-        }
-        
-        .footer-custom {
-            background-color: #f8f9fa;
-            border-top: 1px solid #dee2e6;
-            padding: 2rem 0;
-            text-align: center;
-            color: #6c757d;
-            margin-top: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="psm-test.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -156,13 +24,41 @@
                     <h2 class="card-title mb-4">Welcome to PSM Test Generator</h2>
                     <p class="card-text lead mb-4">Test your Scrum Master knowledge with random multi-choice questions</p>
                     
+                    <!-- Mode Selection Toggle -->
+                    <div class="mb-4 mode-selector">
+                        <label class="form-label d-block mb-3">Test Mode:</label>
+                        <div class="btn-group" role="group">
+                            <input type="radio" class="btn-check" name="testMode" id="randomMode" value="random" checked>
+                            <label class="btn btn-outline-primary" for="randomMode">
+                                Random
+                            </label>
+                            
+                            <input type="radio" class="btn-check" name="testMode" id="orderMode" value="order">
+                            <label class="btn btn-outline-primary" for="orderMode">
+                                Order
+                            </label>
+                        </div>
+                        <small class="text-muted d-block mt-2">Random: Shuffle questions | Order: Sequential questions</small>
+                    </div>
+
+                    <!-- Start Index Input (Order Mode Only) -->
+                    <div id="startIndexContainer" class="mb-4 mode-input d-none">
+                        <label for="startIndexInput" class="form-label">Start Question Index:</label>
+                        <div class="input-group" style="max-width: 250px; margin: 0 auto;">
+                            <input type="number" id="startIndexInput" class="form-control" 
+                                   min="1" max="240" value="1" placeholder="1-240">
+                            <span class="input-group-text">of 250</span>
+                        </div>
+                        <small class="text-muted d-block mt-2">Choose starting question (1-240)</small>
+                        <div id="start-index-error" class="alert alert-danger mt-2 d-none" role="alert"></div>
+                    </div>
+                    
                     <!-- Question Count Input -->
                     <div class="mb-4">
                         <label for="questionCountInput" class="form-label">Questions per test:</label>
                         <div class="input-group" style="max-width: 200px; margin: 0 auto;">
                             <input type="number" id="questionCountInput" class="form-control" 
-                                   min="1" max="250" value="5" 
-                                   onchange="app.updateQuestionCount()">
+                                   min="1" max="250" value="5">
                             <span class="input-group-text">/250</span>
                         </div>
                         <small class="text-muted d-block mt-2">Choose between 1 and 250 questions</small>
@@ -170,10 +66,10 @@
                     </div>
 
                     <div class="mt-4">
-                        <button class="btn btn-primary btn-primary-custom btn-lg me-2" onclick="app.startNewTest()">
+                        <button class="btn btn-primary btn-primary-custom btn-lg me-2">
                             🚀 Start New Test
                         </button>
-                        <button class="btn btn-outline-primary btn-lg" onclick="app.showStatsView()">
+                        <button class="btn btn-outline-primary btn-lg">
                             📊 View Statistics
                         </button>
                     </div>
@@ -186,7 +82,7 @@
                     <!-- Progress Bar -->
                     <div class="progress-container">
                         <div class="question-number">
-                            Question <span id="current-question">1</span> of <span id="total-questions">10</span>
+                            Question <span id="current-question">1</span> of <span id="total-questions">10</span> - <span id="answer-for-test" class="for-test">A</span> - <span id="id-for-test"  class="for-test">A</span> - <span id="category-for-test"  class="for-test">A</span>
                         </div>
                         <div class="progress" style="height: 6px;">
                             <div class="progress-bar" id="progress-bar" style="width: 10%"></div>
@@ -201,13 +97,13 @@
 
                     <!-- Navigation Buttons -->
                     <div class="mt-5 text-center">
-                        <button class="btn btn-secondary me-2" id="prev-btn" onclick="app.prevQuestion()" style="display:none;">
+                        <button class="btn btn-secondary me-2" id="prev-btn" style="display:none;">
                             ← Previous
                         </button>
-                        <button class="btn btn-primary btn-primary-custom" id="next-btn" onclick="app.nextQuestion()">
+                        <button class="btn btn-primary btn-primary-custom" id="next-btn">
                             Next →
                         </button>
-                        <button class="btn btn-success" id="submit-btn" onclick="app.submitTest()" style="display:none;">
+                        <button class="btn btn-success" id="submit-btn" style="display:none;">
                             ✓ Submit Test
                         </button>
                     </div>
@@ -225,13 +121,10 @@
                     </div>
 
                     <div class="mt-5">
-                        <button class="btn btn-primary btn-primary-custom me-2" onclick="app.showReviewView()">
+                        <button class="btn btn-primary btn-primary-custom me-2">
                             👁️ Review Answers
                         </button>
-                        <button class="btn btn-outline-primary me-2" onclick="app.startNewTest()">
-                            🔄 Start Another Test
-                        </button>
-                        <button class="btn btn-outline-secondary" onclick="app.showDashboard()">
+                        <button class="btn btn-outline-secondary">
                             🏠 Dashboard
                         </button>
                     </div>
@@ -246,11 +139,8 @@
                     <div id="review-container"></div>
 
                     <div class="mt-5 text-center">
-                        <button class="btn btn-primary btn-primary-custom me-2" onclick="app.showResultsView()">
+                        <button class="btn btn-primary btn-primary-custom me-2">
                             ← Back to Results
-                        </button>
-                        <button class="btn btn-outline-primary" onclick="app.startNewTest()">
-                            🔄 Start Another Test
                         </button>
                     </div>
                 </div>
@@ -264,10 +154,10 @@
                     <div id="stats-container"></div>
 
                     <div class="mt-4 text-center">
-                        <button class="btn btn-outline-danger me-2" id="clear-stats-btn" onclick="app.clearStats()" style="display:none;">
+                        <button class="btn btn-outline-danger me-2" id="clear-stats-btn" style="display:none;">
                             🗑️ Clear History
                         </button>
-                        <button class="btn btn-outline-primary" onclick="app.showDashboard()">
+                        <button class="btn btn-outline-primary">
                             🏠 Back to Dashboard
                         </button>
                     </div>
@@ -282,495 +172,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        // PSM Test Application
-        const app = {
-            // Data
-            allQuestions: [],
-           questionCount: 5, // Default question count
-           currentTest: {
-               questions: [],
-               userAnswers: [],
-               currentIndex: 0
-           },
-           stats: {
-               totalTests: 0,
-               bestScore: 0,
-               averageScore: 0,
-               testHistory: []
-           },
-
-           // Initialize
-           init() {
-               this.loadStats();
-               this.loadQuestions();
-           },
-
-           // Update question count from input
-           updateQuestionCount() {
-               const input = document.getElementById('questionCountInput');
-               let count = parseInt(input.value) || 5;
-               const errorDiv = document.getElementById('question-count-error');
-
-               // Validation
-               if (count < 1 || count > 250) {
-                   errorDiv.textContent = 'Please enter a number between 1 and 250';
-                   errorDiv.classList.remove('d-none');
-                   input.value = this.questionCount;
-                   return;
-               }
-
-               errorDiv.classList.add('d-none');
-               this.questionCount = count;
-           },
-
-           // Load questions from embedded data
-           loadQuestions() {
-               // PSM Data will be loaded via fetch
-               fetch('psm_data.json')
-                   .then(response => response.json())
-                   .then(data => {
-                       this.allQuestions = data;
-                   })
-                   .catch(error => {
-                       console.error('Error loading questions:', error);
-                       alert('Error loading test data. Please ensure psm_data.json is in the same directory.');
-                   });
-            },
-
-            // Fisher-Yates shuffle algorithm
-            shuffleArray(array) {
-                const shuffled = [...array];
-                for (let i = shuffled.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-                }
-                return shuffled;
-            },
-
-            // Compare answers (order-independent for multi-choice)
-            compareAnswers(userAnswer, correctAnswers) {
-                if (!userAnswer || !correctAnswers) {
-                    return userAnswer === correctAnswers;
-                }
-
-                // Split, trim, and sort both answers
-                const userAnswerArray = userAnswer
-                    .split(',')
-                    .map(a => a.trim())
-                    .sort()
-                    .join(',');
-                
-                const correctAnswerArray = correctAnswers
-                    .split(',')
-                    .map(a => a.trim())
-                    .sort()
-                    .join(',');
-
-                return userAnswerArray === correctAnswerArray;
-            },
-
-            // Start new test
-            startNewTest() {
-                if (this.allQuestions.length === 0) {
-                    alert('Questions are still loading. Please wait...');
-                    return;
-                }
-
-                // Validate question count
-                this.updateQuestionCount();
-
-                // Select random questions based on questionCount
-                const shuffled = this.shuffleArray(this.allQuestions);
-                const selectedQuestions = shuffled.slice(0, this.questionCount);
-
-                // Initialize test data
-                this.currentTest = {
-                    questions: selectedQuestions.map(q => ({
-                        original: q,
-                        shuffledChoices: this.shuffleChoices(q)
-                    })),
-                    userAnswers: new Array(this.questionCount).fill(null),
-                    currentIndex: 0
-                };
-
-                this.showTestView();
-                this.displayQuestion();
-            },
-
-            // Shuffle choices while tracking correct answer
-            shuffleChoices(question) {
-                const choices = Object.entries(question.choices);
-                const correctAnswers = question.answer.split(',').map(a => a.trim());
-                
-                const shuffled = this.shuffleArray(choices);
-                
-                return {
-                    items: shuffled,
-                    originalToShuffled: Object.fromEntries(shuffled.map((item, index) => [item[0], index])),
-                    correctAnswers: correctAnswers
-                };
-            },
-
-            // Display current question
-            displayQuestion() {
-                const questionIndex = this.currentTest.currentIndex;
-                const questionData = this.currentTest.questions[questionIndex];
-                const question = questionData.original;
-                const shuffledChoices = questionData.shuffledChoices;
-
-                // Update question text
-                document.getElementById('question-text').textContent = question.question;
-                document.getElementById('current-question').textContent = questionIndex + 1;
-                document.getElementById('total-questions').textContent = this.questionCount;
-
-                // Update progress bar
-                const progress = ((questionIndex + 1) / this.questionCount) * 100;
-                document.getElementById('progress-bar').style.width = progress + '%';
-
-                // Render answer options
-                const container = document.getElementById('answers-container');
-                container.innerHTML = '';
-
-                const isMultiChoice = question.answer.includes(',');
-                const inputType = isMultiChoice ? 'checkbox' : 'radio';
-
-                shuffledChoices.items.forEach((choice, index) => {
-                    const label = document.createElement('label');
-                    label.className = 'answer-option';
-                    label.style.cursor = 'pointer';
-
-                    const input = document.createElement('input');
-                    input.type = inputType;
-                    input.name = `answer-${questionIndex}`;
-                    input.value = choice[0];
-                    input.dataset.index = index;
-
-                    // Check if previously selected
-                    const previousAnswer = this.currentTest.userAnswers[questionIndex];
-                    if (previousAnswer) {
-                        if (isMultiChoice && previousAnswer.includes(choice[0])) {
-                            input.checked = true;
-                            label.classList.add('selected');
-                        } else if (!isMultiChoice && previousAnswer === choice[0]) {
-                            input.checked = true;
-                            label.classList.add('selected');
-                        }
-                    }
-
-                    input.addEventListener('change', (e) => {
-                        if (isMultiChoice) {
-                            this.updateMultiChoiceAnswer(questionIndex, inputType);
-                        } else {
-                            this.updateSingleChoiceAnswer(questionIndex, e.target.value, inputType);
-                        }
-                        this.updateOptionSelection(label);
-                    });
-
-                    label.appendChild(input);
-                    label.appendChild(document.createTextNode(` ${choice[0]}: ${choice[1]}`));
-                    container.appendChild(label);
-                });
-
-                this.updateNavigationButtons();
-            },
-
-            // Update single choice answer
-            updateSingleChoiceAnswer(questionIndex, value, inputType) {
-                this.currentTest.userAnswers[questionIndex] = value;
-                this.updateOptionSelection(null);
-            },
-
-            // Update multi-choice answer
-            updateMultiChoiceAnswer(questionIndex, inputType) {
-                const checked = Array.from(document.querySelectorAll(`input[name="answer-${questionIndex}"]:checked`))
-                    .map(input => input.value)
-                    .join(',');
-                this.currentTest.userAnswers[questionIndex] = checked || null;
-            },
-
-            // Update option visual selection
-            updateOptionSelection(label) {
-                if (label) {
-                    const allLabels = document.querySelectorAll('.answer-option');
-                    allLabels.forEach(l => l.classList.remove('selected'));
-                    
-                    if (label.querySelector('input').checked) {
-                        label.classList.add('selected');
-                    }
-                }
-            },
-
-            // Navigate to previous question
-            prevQuestion() {
-                if (this.currentTest.currentIndex > 0) {
-                    this.currentTest.currentIndex--;
-                    this.displayQuestion();
-                    window.scrollTo(0, 0);
-                }
-            },
-
-            // Navigate to next question
-            nextQuestion() {
-                if (this.currentTest.currentIndex < this.questionCount - 1) {
-                    this.currentTest.currentIndex++;
-                    this.displayQuestion();
-                    window.scrollTo(0, 0);
-                }
-            },
-
-            // Submit test
-            submitTest() {
-                if (this.currentTest.userAnswers.some(answer => answer === null)) {
-                    alert('Please answer all questions before submitting.');
-                    return;
-                }
-
-                this.calculateScore();
-                this.showResultsView();
-            },
-
-            // Calculate score
-            calculateScore() {
-                let score = 0;
-                this.currentTest.questions.forEach((qData, index) => {
-                    const question = qData.original;
-                    const userAnswer = this.currentTest.userAnswers[index];
-                    const correctAnswers = question.answer;
-
-                    if (this.compareAnswers(userAnswer, correctAnswers)) {
-                        score++;
-                    }
-                });
-
-                this.currentTest.score = score;
-                this.currentTest.totalQuestions = this.questionCount;
-                this.currentTest.percentage = Math.round((score / this.questionCount) * 100);
-
-                // Update stats
-                this.updateStats(score);
-            },
-
-            // Update statistics
-            updateStats(score) {
-                this.stats.totalTests++;
-                this.stats.bestScore = Math.max(this.stats.bestScore, score);
-                this.stats.averageScore = Math.round(
-                    (this.stats.averageScore * (this.stats.totalTests - 1) + score) / this.stats.totalTests
-                );
-
-                const now = new Date();
-                this.stats.testHistory.push({
-                    date: now.toLocaleDateString(),
-                    time: now.toLocaleTimeString(),
-                    score: score,
-                    total: 10
-                });
-
-                this.saveStats();
-            },
-
-            // Show review of answers
-            showReviewView() {
-                this.showView('review-view');
-                const container = document.getElementById('review-container');
-                container.innerHTML = '';
-
-                this.currentTest.questions.forEach((qData, index) => {
-                    const question = qData.original;
-                    const userAnswer = this.currentTest.userAnswers[index];
-                    const correctAnswers = question.answer;
-                    const isCorrect = this.compareAnswers(userAnswer, correctAnswers);
-
-                    const reviewItem = document.createElement('div');
-                    reviewItem.className = 'card mb-3';
-                    reviewItem.innerHTML = `
-                        <div class="card-body">
-                            <h6 class="card-title">Question ${index + 1}</h6>
-                            <p class="card-text mb-3">${question.question}</p>
-                            
-                            <div class="mb-3">
-                                <strong>Your Answer:</strong>
-                                <div class="${isCorrect ? 'correct' : 'incorrect'} p-2 rounded mt-1">
-                                    ${userAnswer ? this.formatAnswerDisplay(userAnswer, question.choices) : 'Not answered'}
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <strong>Correct Answer:</strong>
-                                <div class="correct p-2 rounded mt-1">
-                                    ${this.formatAnswerDisplay(correctAnswers, question.choices)}
-                                </div>
-                            </div>
-                        </div>
-                    `;
-
-                    container.appendChild(reviewItem);
-                });
-
-                window.scrollTo(0, 0);
-            },
-
-            // Format answer display
-            formatAnswerDisplay(answers, choices) {
-                return answers.split(',').map(a => {
-                    const key = a.trim();
-                    return `<strong>${key}:</strong> ${choices[key]}`;
-                }).join('<br>');
-            },
-
-            // Show statistics view
-            showStatsView() {
-                this.showView('stats-view');
-                const container = document.getElementById('stats-container');
-                
-                if (this.stats.totalTests === 0) {
-                    container.innerHTML = '<p class="text-center text-muted">No tests taken yet. Start your first test!</p>';
-                    document.getElementById('clear-stats-btn').style.display = 'none';
-                    return;
-                }
-
-                document.getElementById('clear-stats-btn').style.display = 'inline-block';
-
-                const passCount = this.stats.testHistory.filter(t => t.score >= 7).length;
-                const passRate = Math.round((passCount / this.stats.totalTests) * 100);
-
-                container.innerHTML = `
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div class="stats-item">
-                                <h5>Total Tests</h5>
-                                <div class="stats-value">${this.stats.totalTests}</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="stats-item">
-                                <h5>Best Score</h5>
-                                <div class="stats-value">${this.stats.bestScore}/10</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="stats-item">
-                                <h5>Average Score</h5>
-                                <div class="stats-value">${this.stats.averageScore}/10</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="stats-item">
-                                <h5>Pass Rate (7+)</h5>
-                                <div class="stats-value">${passRate}%</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h5 class="mt-5 mb-3">Test History</h5>
-                    <div class="table-responsive">
-                        <table class="table table-sm table-hover">
-                            <thead class="table-light">
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Time</th>
-                                    <th>Score</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${this.stats.testHistory.map(test => `
-                                    <tr>
-                                        <td>${test.date}</td>
-                                        <td>${test.time}</td>
-                                        <td>${test.score}/${test.total}</td>
-                                        <td><span class="badge ${test.score >= 7 ? 'bg-success' : 'bg-warning'}">${test.score >= 7 ? 'Pass' : 'Fail'}</span></td>
-                                    </tr>
-                                `).join('')}
-                            </tbody>
-                        </table>
-                    </div>
-                `;
-
-                window.scrollTo(0, 0);
-            },
-
-            // Clear statistics
-            clearStats() {
-                if (confirm('Are you sure you want to clear all test history?')) {
-                    this.stats = {
-                        totalTests: 0,
-                        bestScore: 0,
-                        averageScore: 0,
-                        testHistory: []
-                    };
-                    this.saveStats();
-                    this.showStatsView();
-                }
-            },
-
-            // Update navigation buttons
-            updateNavigationButtons() {
-                const prevBtn = document.getElementById('prev-btn');
-                const nextBtn = document.getElementById('next-btn');
-                const submitBtn = document.getElementById('submit-btn');
-
-                prevBtn.style.display = this.currentTest.currentIndex > 0 ? 'inline-block' : 'none';
-                nextBtn.style.display = this.currentTest.currentIndex < this.questionCount - 1 ? 'inline-block' : 'none';
-                submitBtn.style.display = this.currentTest.currentIndex === this.questionCount - 1 ? 'inline-block' : 'none';
-            },
-
-            // View management
-            showView(viewId) {
-                document.querySelectorAll('[id$="-view"]').forEach(view => {
-                    view.classList.add('view-hidden');
-                });
-                document.getElementById(viewId).classList.remove('view-hidden');
-            },
-
-            showDashboard() {
-                this.showView('dashboard-view');
-                window.scrollTo(0, 0);
-            },
-
-            showTestView() {
-                this.showView('test-view');
-                window.scrollTo(0, 0);
-            },
-
-            showResultsView() {
-                this.showView('results-view');
-                
-                const badge = document.getElementById('score-badge');
-                const message = document.getElementById('result-message');
-                
-                const isPass = this.currentTest.score >= 7;
-                badge.className = `result-badge ${isPass ? 'pass' : 'fail'}`;
-                badge.textContent = `${this.currentTest.score}/${this.currentTest.totalQuestions} (${this.currentTest.percentage}%)`;
-                
-                if (isPass) {
-                    message.textContent = '🎉 Great job! You passed the test!';
-                } else {
-                    message.textContent = '📖 Keep practicing! Review your answers to improve.';
-                }
-                
-                window.scrollTo(0, 0);
-            },
-
-            // LocalStorage management
-            saveStats() {
-                localStorage.setItem('psmTestStats', JSON.stringify(this.stats));
-            },
-
-            loadStats() {
-                const saved = localStorage.getItem('psmTestStats');
-                if (saved) {
-                    this.stats = JSON.parse(saved);
-                }
-            }
-        };
-
-        // Initialize app on page load
-        document.addEventListener('DOMContentLoaded', () => {
-            app.init();
-        });
-    </script>
+    <script src="psm-test.js"></script>
 </body>
 </html>

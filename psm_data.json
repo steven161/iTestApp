@@ -9,7 +9,8 @@
       "E": "There should be only one Product Owner."
     },
     "answer": "C,E",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 1
   },
   {
     "question": "A Scrum Team has been working on a product for nine Sprints. A new Product Owner comes in, understanding he is accountable for the Product Backlog. However, he is unsure about his responsibilities. Which two activities are part of the Product Owner role according to Scrum? (choose two)",
@@ -21,7 +22,8 @@
       "E": "Creating detailed functional test cases."
     },
     "answer": "A,B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 2
   },
   {
     "question": "User documentation is part of your Definition of Done. However, there aren't enough technical writers for all teams. Your Developers don't have a technical writer. What should you do?",
@@ -32,7 +34,8 @@
       "D": "Your Scrum Team is still responsible for creating user documentation. In this case, the Scrum Team members will write it."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 3
   },
   {
     "question": "You are the Scrum Master for four Scrum Teams working from the same Product Backlog. Several of the Developers come to you complaining that work identified for the upcoming two Sprints will require full-time commitment from a technical specialist who is external to the teams. What are two key concerns for the Scrum Master to take into account in this situation? (choose two)",
@@ -43,7 +46,8 @@
       "D": "The ability of the Developers to produce integrated Increments."
     },
     "answer": "B,D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 4
   },
   {
     "question": "The Product Backlog is ordered by:",
@@ -54,7 +58,8 @@
       "D": "Size, where small items are at the top and large items are at the bottom."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 5
   },
   {
     "question": "What happens if the Scrum Team cannot complete its work by the end of the Sprint?",
@@ -64,7 +69,8 @@
       "C": "The Sprint is extended temporarily. Lessons are taken to ensure it doesn't happen again."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 6
   },
   {
     "question": "Which topics should be discussed in the Sprint Review?",
@@ -75,7 +81,8 @@
       "D": "All of the above."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 7
   },
   {
     "question": "A member of the Scrum Team takes the Scrum Master aside to express his concerns about data security issues. What should the Scrum Master do?",
@@ -87,7 +94,8 @@
       "E": "Ask the person to share the issue with the team as soon as possible."
     },
     "answer": "E",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 8
   },
   {
     "question": "What does it mean for a Scrum Team to be cross-functional?",
@@ -98,7 +106,8 @@
       "D": "The Scrum Team is a virtual team drawing from separate teams of business analysts, architects, Developers and testers."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 9
   },
   {
     "question": "Sprint burndown charts are an efficient tracking tool, because they show:",
@@ -109,7 +118,8 @@
       "D": "How many Product Backlog items remain."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 10
   },
   {
     "question": "How much work must a Scrum Team do to a Product Backlog item it selects for a Sprint?",
@@ -120,7 +130,8 @@
       "D": "As much as it has told the Product Owner will be done for every Product Backlog item it selects in conformance with the Definition of Done."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 11
   },
   {
     "question": "Which statement best describes the Sprint Backlog as outcome of the Sprint Planning?",
@@ -132,7 +143,8 @@
       "E": "It is ordered by the Product Owner."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 12
   },
   {
     "question": "If burndown charts are used to visualize progress, what does a trend line through a release burndown chart indicate? (choose the best answer)",
@@ -143,7 +155,8 @@
       "D": "When the project will be over if the Product Owner removes work that is equal in effort to any new work that is added."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 13
   },
   {
     "question": "Who is responsible for engaging the stakeholders? (choose the best answer)",
@@ -155,7 +168,8 @@
       "E": "The Product Owner."
     },
     "answer": "E",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 14
   },
   {
     "question": "At the end of a Sprint, a Product Backlog item worked on during the Sprint does not meet the Definition of Done. What two things should happen with the undone Product Backlog item? (choose the best two answers)",
@@ -166,7 +180,8 @@
       "D": "Do not include the item in the Increment this Sprint."
     },
     "answer": "B,D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 15
   },
   {
     "question": "Which two of the following are true about the Scrum Master role? (choose the best two answers)",
@@ -178,7 +193,8 @@
       "E": "The Scrum Master is responsible for updating the Sprint Burndown."
     },
     "answer": "B,C",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 16
   },
   {
     "question": "What are three benefits of self-management? (choose the best three answers)",
@@ -190,7 +206,8 @@
       "E": "Increased commitment."
     },
     "answer": "A,D,E",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 17
   },
   {
     "question": "Which three of the following are time-boxed events in Scrum? (choose the best three answers)",
@@ -204,7 +221,8 @@
       "G": "Daily Scrum."
     },
     "answer": "C,D,G",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 18
   },
   {
     "question": "Who is responsible for clearly expressing Product Backlog items? (choose the best answer)",
@@ -215,7 +233,8 @@
       "D": "The business analyst who represents the Product Owner in the Scrum Team."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 19
   },
   {
     "question": "What is the best suited structure for Scrum Teams in order to produce integrated Increments? (choose the best answer)",
@@ -224,7 +243,8 @@
       "B": "Each Scrum Team develops functionality from beginning to end throughout all technical layers."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 20
   },
   {
     "question": "Why should the Product Owner be present at the Daily Scrum? (choose the best answer)",
@@ -235,7 +255,8 @@
       "D": "To participate as a Scrum Team member."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 21
   },
   {
     "question": "What two techniques could the Scrum Master use when the Scrum Team gets caught in an internal disagreement about which development techniques to apply? (choose the best two answers)",
@@ -246,7 +267,8 @@
       "D": "Send every team member to the company's Human Resources department to express their concerns."
     },
     "answer": "A,B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 22
   },
   {
     "question": "What enhances the transparency of an Increment? (choose the best answer)",
@@ -257,7 +279,8 @@
       "D": "Updating Sprint tasks properly in the electronic tracking tool."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 23
   },
   {
     "question": "Who determines how work is performed during the Sprint? (choose the best answer)",
@@ -269,7 +292,8 @@
       "E": "The Developers managers."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 24
   },
   {
     "question": "When does the second Sprint start? (choose the best answer)",
@@ -280,7 +304,8 @@
       "D": "After the customer completes acceptance testing of the first Sprint."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 25
   },
   {
     "question": "What is included in the Sprint Backlog? (choose the best answer)",
@@ -292,7 +317,8 @@
       "E": "Any of the above (or others) which are a decomposition of the selected Product Backlog items."
     },
     "answer": "E",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 26
   },
   {
     "question": "Which of the following are true about the Product Owner role? (choose the best two answers)",
@@ -303,7 +329,8 @@
       "D": "The Product Owner role can be played by a committee or a team of people."
     },
     "answer": "A,B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 27
   },
   {
     "question": "True or False: When multiple teams work together on the same product, each team should maintain a separate Product Backlog.",
@@ -312,7 +339,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 28
   },
   {
     "question": "If two Scrum Teams are added to the development of a product that previously had only one Scrum Team, what will be the immediate impact on the productivity of the original Scrum Team? (choose the best answer)",
@@ -322,7 +350,8 @@
       "C": "Its productivity is likely to increase."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 29
   },
   {
     "question": "A Scrum Master is introducing Scrum to a new Scrum Team. The Scrum Team has decided that a Sprint Retrospective is unnecessary. What action should the Scrum Master take? (choose the best answer)",
@@ -333,7 +362,8 @@
       "D": "Begin facilitating productive and useful Sprint Retrospectives."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 30
   },
   {
     "question": "Which two things are appropriate for a Scrum Master to do if the Developers don't have the engineering tools and infrastructure to completely finish each selected Product Backlog item? (choose the best two answers)",
@@ -345,7 +375,8 @@
       "E": "Have the Scrum Team establish a Definition of Done that is actually possible to achieve given current circumstances."
     },
     "answer": "A,E",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 31
   },
   {
     "question": "When is implementation of a Product Backlog item considered complete? (choose the best answer)",
@@ -356,7 +387,8 @@
       "D": "When all work in the Sprint Backlog related to the item is finished."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 32
   },
   {
     "question": "Choose two responsibilities of a self-managing Scrum Team. (choose the best two answers)",
@@ -368,7 +400,8 @@
       "E": "Report daily progress to stakeholders."
     },
     "answer": "B,C",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 33
   },
   {
     "question": "Every Scrum Team should have: (choose the best answer)",
@@ -378,7 +411,8 @@
       "C": "One Lead Developer and no more than 8 other members."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 34
   },
   {
     "question": "Why does the Product Owner want the Scrum Team to adhere to its Definition of Done? (choose the best answer)",
@@ -389,7 +423,8 @@
       "D": "To predict the team's productivity over time."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 35
   },
   {
     "question": "During a Sprint Retrospective, for what is the Scrum Master responsible? (choose the best answer)",
@@ -400,7 +435,8 @@
       "D": "Summarizing and reporting the discussions to management."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 36
   },
   {
     "question": "The Scrum Team should have all the skills needed to: (choose the best answer)",
@@ -410,7 +446,8 @@
       "C": "Complete the project within the date and cost as calculated by the Product Owner."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 37
   },
   {
     "question": "During the Sprint, the Scrum Master's role is to do which two of the following: (choose the best two answers)",
@@ -423,7 +460,8 @@
       "F": "Assign tasks with the Scrum Team."
     },
     "answer": "A,B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 38
   },
   {
     "question": "The Scrum Master observes the Product Owner struggling with ordering the Product Backlog. What is an appropriate action for the Scrum Master to take? (choose the best answer)",
@@ -435,7 +473,8 @@
       "E": "Encourage the Product Owner to work with the Developers to see which items technically are fastest to implement."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 39
   },
   {
     "question": "True or False: The Product Owner makes sure the team selects enough from the Product Backlog for a Sprint to satisfy the stakeholders.",
@@ -444,7 +483,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 40
   },
   {
     "question": "Which statement best describes the Sprint Review? (choose the best answer)",
@@ -455,7 +495,8 @@
       "D": "It is when the Scrum Team and stakeholders inspect the outcome of a Sprint and figure out what to do next."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 41
   },
   {
     "question": "Who owns the Sprint Backlog? (choose the best answer)",
@@ -466,7 +507,8 @@
       "D": "The Scrum Team."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 42
   },
   {
     "question": "When might a Sprint be abnormally cancelled? (choose the best answer)",
@@ -477,7 +519,8 @@
       "D": "When it becomes clear that not everything will be finished by the end of the Sprint."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 43
   },
   {
     "question": "A Sprint Retrospective should be held: (choose the best answer)",
@@ -488,7 +531,8 @@
       "D": "At the end of the last Sprint in a project or a release."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 44
   },
   {
     "question": "A new Developer is having continuing conflicts with existing Developers and creating the hostile environment. If necessary, who is responsible for removing the team member? (choose the best answer)",
@@ -499,7 +543,8 @@
       "D": "The Product Owner is responsible, because he/she controls the return on investment (ROI)."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 45
   },
   {
     "question": "Which three purposes does the Definition of Done serve? (choose the best three answers)",
@@ -511,7 +556,8 @@
       "E": "Increase transparency."
     },
     "answer": "A,B,E",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 46
   },
   {
     "question": "During a Sprint Retrospective, the Developers proposes moving the Daily Scrum to only occur on Tuesdays and Thursdays. Which two are the most appropriate responses for the Scrum Master? (choose the best two answers)",
@@ -523,7 +569,8 @@
       "E": "Acknowledge and support the self-managing team's decision."
     },
     "answer": "B,D",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 47
   },
   {
     "question": "When should a Sprint Goal be created? (choose the best answer)",
@@ -535,7 +582,8 @@
       "E": "During Sprint Planning."
     },
     "answer": "E",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 48
   },
   {
     "question": "True or False: Every Scrum team must have a Product Owner and Scrum Master.",
@@ -546,7 +594,8 @@
       "D": "True. Each must be 100% dedicated to the Scrum Team."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 49
   },
   {
     "question": "Who can abnormally terminate a Sprint? (choose the best answer)",
@@ -557,7 +606,8 @@
       "D": "The Stakeholders."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 50
   },
   {
     "question": "True or False: The Sprint Goal is a result of Sprint Planning, as is the Sprint Backlog.",
@@ -566,7 +616,8 @@
       "B": "False."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 51
   },
   {
     "question": "Which two of the following are appropriate topics for discussion during a Sprint Retrospective? (choose the best two answers)",
@@ -577,7 +628,8 @@
       "D": "Documenting acceptance criteria for items in the next Sprint."
     },
     "answer": "A,C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 52
   },
   {
     "question": "A Scrum Master is working with a Scrum Team that has members in different physical locations. The Scrum Team meets in a variety of meeting rooms and has much to do logistically (for example, set up conference calls) before the Daily Scrum. What action should the Scrum Master take? (choose the best answer)",
@@ -588,7 +640,8 @@
       "D": "Inform management and ask them to solve it."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 53
   },
   {
     "question": "True or False: Cross-functional teams are optimized to work on one technical layer of a system only (e.g. GUI, database, middle tier, interfaces).",
@@ -597,7 +650,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 54
   },
   {
     "question": "Which of the following might the Scrum Team discuss during a Sprint Retrospective? (choose the best answer)",
@@ -609,7 +663,8 @@
       "E": "All of the above."
     },
     "answer": "E",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 55
   },
   {
     "question": "What are the two primary ways a Scrum Master keeps a Developers working at its highest level of productivity? (choose the best two answers)",
@@ -620,7 +675,8 @@
       "D": "By keeping high value features high in the Product Backlog."
     },
     "answer": "B,C",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 56
   },
   {
     "question": "What is the recommended size for the Developers? (choose the best answer)",
@@ -631,7 +687,8 @@
       "D": "3 to 9."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 57
   },
   {
     "question": "You are the Scrum Master of a new, to be developed product. Development is going to require 45 people. What is a good first question-for you to suggest the group thinks about when forming into teams? (choose the best answer)",
@@ -642,7 +699,8 @@
       "D": "Who are the subject matter experts on each team?"
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 58
   },
   {
     "question": "Which three of the following are feedback loops in Scrum? (choose the best three answers)",
@@ -654,7 +712,8 @@
       "E": "Daily Scrum."
     },
     "answer": "A,C,E",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 59
   },
   {
     "question": "When the Developers are having trouble delivering a working Increment because they don't understand a functional requirement, what should they do? (choose the best answer)",
@@ -665,7 +724,8 @@
       "D": "Defer the work to a more appropriate Sprint."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 60
   },
   {
     "question": "When is the Sprint Backlog created? (choose the best answer)",
@@ -676,7 +736,8 @@
       "D": "During the Sprint."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 61
   },
   {
     "question": "Which of the following services are appropriate for a Scrum Master in regard to the Daily Scrum? (choose the best answer)",
@@ -688,7 +749,8 @@
       "E": "All of the above."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 62
   },
   {
     "question": "Which of the following best describes an Increment of working software? (choose the best answer)",
@@ -700,7 +762,8 @@
       "E": "UML diagrams that describe how to deliver functionality in future iterations."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 63
   },
   {
     "question": "In order to achieve the benefits of Scrum, it is important to enact the value of commitment. What two actions demonstrate the commitment of Scrum Team members? (choose the best two answers)",
@@ -712,7 +775,8 @@
       "E": "Work late."
     },
     "answer": "B,C",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 64
   },
   {
     "question": "True or False: The Product Owner determines how many Product Backlog items the Developers selects for a Sprint. (choose the best answer)",
@@ -725,7 +789,8 @@
       "F": "False, capacity and commitment are the Project manager's responsibility."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 65
   },
   {
     "question": "What are two ways that regulatory compliance requirements are dealt with in Scrum? (choose the best two answers)",
@@ -736,7 +801,8 @@
       "D": "They are addressed as part of meeting the Definition of Done during each Sprint."
     },
     "answer": "C,D",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 66
   },
   {
     "question": "The Sprint Review is mainly an inspect and adapt opportunity for which group?",
@@ -749,7 +815,8 @@
       "F": "The Product Owner and stakeholders."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 67
   },
   {
     "question": "True or False: To get started in terms of what to build, Scrum requires no more than a Product Owner with enough ideas for a first Sprint, Developers to implement those ideas and a Scrum Master to help guide the process.",
@@ -758,7 +825,8 @@
       "B": "False."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 68
   },
   {
     "question": "What is the time-box for the Sprint Review?",
@@ -770,7 +838,8 @@
       "E": "1 day"
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 69
   },
   {
     "question": "Who is responsible for tracking the remaining work of the Sprint?",
@@ -782,7 +851,8 @@
       "E": "The Product Owner."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 70
   },
   {
     "question": "What is the tactic a Scrum Master should use to divide a group of 100 people into multiple Scrum Teams?",
@@ -792,7 +862,8 @@
       "C": "Ask the Developers to divide themselves into teams."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 71
   },
   {
     "question": "True or False: A product Increment must be released to production at the end of each Sprint.",
@@ -801,7 +872,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 72
   },
   {
     "question": "If burndown charts are used to visualize progress, what do they track?",
@@ -812,7 +884,8 @@
       "D": "Accumulated business value delivered to the customer."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 73
   },
   {
     "question": "How is management external to the Scrum Team involved in the Daily Scrum?",
@@ -823,7 +896,8 @@
       "D": "The Product Owner represents their opinions."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 74
   },
   {
     "question": "A Scrum Master is keeping a list of open impediments, but it is growing and he/she has been able to resolve only a small portion of the impediments. Which three techniques would be most helpful in this situation? (choose three)",
@@ -834,7 +908,8 @@
       "D": "Alerting management to the impediments and their impact."
     },
     "answer": "A,B,D",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 75
   },
   {
     "question": "Which Scrum Value is affected by a lack of trust in the Scrum Team?",
@@ -847,7 +922,8 @@
       "F": "All of the above."
     },
     "answer": "F",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 76
   },
   {
     "question": "What is the time-box for the Sprint Planning meeting?",
@@ -858,7 +934,8 @@
       "D": "Whenever it is done."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Sprint / Planning",
+    "id": 77
   },
   {
     "question": "A Product Owner wants advice from the Scrum Master about estimating work in Scrum. Which of these is the guideline that a Scrum Master should give?",
@@ -870,7 +947,8 @@
       "E": "Estimates are made by the Product Owner, but are best checked with the Scrum Team."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 78
   },
   {
     "question": "What is a Scrum Team responsible for? (choose two)",
@@ -881,7 +959,8 @@
       "D": "Organizing the work required to meet the Sprint Goal."
     },
     "answer": "A,D",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 79
   },
   {
     "question": "Which two ways of creating Scrum Teams are consistent with Scrum's values? (choose two)",
@@ -893,7 +972,8 @@
       "E": "The Chief Product Owner determines the new team structures and assignments."
     },
     "answer": "A,D",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 80
   },
   {
     "question": "True or False: A Scrum Master is essentially the same thing as a traditional PM (Project Manager).",
@@ -902,7 +982,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 81
   },
   {
     "question": "The Product Owner is not collaborating with the Developers during the Sprint. What are two valuable actions for a Scrum Master to take? (choose two)",
@@ -914,7 +995,8 @@
       "E": "Nominate a proxy Product Owner."
     },
     "answer": "C,D",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 82
   },
   {
     "question": "True or False: Multiple Scrum Teams working on the same product or system all select work from the same Product Backlog.",
@@ -923,7 +1005,8 @@
       "B": "False."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 83
   },
   {
     "question": "For the purpose of transparency, when does Scrum say a new Increment of working software must be available?",
@@ -935,7 +1018,8 @@
       "E": "When the Product Owner asks to create one."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 84
   },
   {
     "question": "True or False: Multiple Scrum Teams working on the same project must have the same Sprint start date.",
@@ -944,7 +1028,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 85
   },
   {
     "question": "During a Sprint Retrospective, for what is the Product Owner responsible?",
@@ -955,7 +1040,8 @@
       "D": "The Product Owner should not take part in Sprint Retrospectives."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 86
   },
   {
     "question": "Marian is the Product Owner envisioning a project for a new release of her product. She made a projection of a release date based upon a sustained velocity of 17 completed units of work per Sprint. Over the first 3 Sprints, the average velocity was 13 for work that the Developers estimated as 90% done. The Developers, feeling the need to meet the plan, figured that a velocity of 17 was within their reach. A good way to continue is:",
@@ -966,7 +1052,8 @@
       "D": "The Developers should remind Marian to find funding for enough Release Sprints in which the remaining work can be done."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 87
   },
   {
     "question": "The time-box for a Daily Scrum?",
@@ -978,7 +1065,8 @@
       "E": "The same time of day every day."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 88
   },
   {
     "question": "Which phrase best describes a Product Owner?",
@@ -989,7 +1077,8 @@
       "D": "Team manager."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 89
   },
   {
     "question": "The length of a Sprint should be:",
@@ -1000,7 +1089,8 @@
       "D": "All of these answers are correct."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 90
   },
   {
     "question": "What are two responsibilities of testers in a Scrum Team? (choose two)",
@@ -1012,7 +1102,8 @@
       "E": "Scrum has no \"tester\" role."
     },
     "answer": "B,E",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 91
   },
   {
     "question": "The CEO asks the Developers to add a \"very important\" item to a Sprint that is in progress. What should the Developers do?",
@@ -1023,7 +1114,8 @@
       "D": "Add the item to the next Sprint."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 92
   },
   {
     "question": "What is the role of management in Scrum?",
@@ -1034,7 +1126,8 @@
       "D": "To continually monitor staffing levels of the Developers."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 93
   },
   {
     "question": "Which technique is the best way the Scrum Master can ensure that the Developers communicates effectively with the Product Owner?",
@@ -1045,7 +1138,8 @@
       "D": "Act as a go-between for them."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 94
   },
   {
     "question": "How much of the Sprint Backlog must be defined during the Sprint Planning event?",
@@ -1056,7 +1150,8 @@
       "D": "Just enough to understand design and architectural implications."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 95
   },
   {
     "question": "Who is responsible for managing the progress of work during a Sprint?",
@@ -1067,7 +1162,8 @@
       "D": "The most junior member of the Team."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 96
   },
   {
     "question": "Who is responsible for collaborating with stakeholders?",
@@ -1079,7 +1175,8 @@
       "E": "The Business Analyst."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 97
   },
   {
     "question": "What two factors are best considered when establishing the Sprint length? (choose two)",
@@ -1090,7 +1187,8 @@
       "D": "The risk of being disconnected from the stakeholders."
     },
     "answer": "B,D",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 98
   },
   {
     "question": "Which of these may a Developers deliver at the end of a Sprint?",
@@ -1101,7 +1199,8 @@
       "D": "A single document, if that is what the Scrum Master asked for."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 99
   },
   {
     "question": "Who creates a Product Backlog item's estimate?",
@@ -1113,7 +1212,8 @@
       "E": "The Developers, alone."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 100
   },
   {
     "question": "Who starts the Daily Scrum?",
@@ -1125,7 +1225,8 @@
       "E": "The person who last broke the build."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 101
   },
   {
     "question": "You are the Scrum Master on a newly formed Scrum Team. Which three of the following activities would probably help the team in starting up? (choose three)",
@@ -1138,7 +1239,8 @@
       "F": "Ask the Product Owner to discuss the product or project, its history, goals, and context, as well as answer questions."
     },
     "answer": "B,E,F",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 102
   },
   {
     "question": "The Developers selects a set of Product Backlog items for a Sprint Backlog with the intent to get the selected items \"Done\" by the end of the Sprint. Which three phrases best describe the purpose of a Definition of Done? (choose three)",
@@ -1151,7 +1253,8 @@
       "F": "It defines what it takes for an Increment to be ready for release."
     },
     "answer": "C,E,F",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 103
   },
   {
     "question": "The Daily Scrum is an event that happens every day. What would be three key concerns if the frequency were to be lowered to every two or three days? (choose three)",
@@ -1164,7 +1267,8 @@
       "F": "The Sprint Backlog may become inaccurate."
     },
     "answer": "A,B,F",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 104
   },
   {
     "question": "Which statement best describes Scrum?",
@@ -1175,7 +1279,8 @@
       "D": "A framework within which complex products in complex environments are developed."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 105
   },
   {
     "question": "Which Scrum Values are exhibited by not building Product Backlog items that have low business value? (choose three)",
@@ -1187,7 +1292,8 @@
       "E": "Courage."
     },
     "answer": "B,C,E",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 106
   },
   {
     "question": "How should Product Backlog items be chosen when multiple Scrum Teams work from the same Product Backlog?",
@@ -1199,7 +1305,8 @@
       "E": "The Product Owner decides."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 107
   },
   {
     "question": "How often should Developers change?",
@@ -1210,7 +1317,8 @@
       "D": "Every Sprint to promote shared learning."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 108
   },
   {
     "question": "Who should make sure everyone on the Developers does his or her tasks for the Sprint?",
@@ -1222,7 +1330,8 @@
       "E": "All of the above."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 109
   },
   {
     "question": "When is it most appropriate for a Developers to change the Definition of Done?",
@@ -1233,7 +1342,8 @@
       "D": "Prior to starting a new project."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 110
   },
   {
     "question": "As the Sprint Planning meeting progresses, the Developers sees that the workload is greater than they can handle. Which two are valid actions? (choose two)",
@@ -1245,7 +1355,8 @@
       "E": "The Developers works overtime during this Sprint."
     },
     "answer": "B,D",
-    "category": "NA"
+    "category": "Sprint / Planning",
+    "id": 111
   },
   {
     "question": "Currently, your Developers are organized to address a single layer only (for example, front end, middle tier, back end, and interfaces). What are three things to consider when deciding to move away from such component teams toward feature teams? (choose three)",
@@ -1257,7 +1368,8 @@
       "E": "With feature teams, it is easier to calculate the productivity per team."
     },
     "answer": "B,C,D",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 112
   },
   {
     "question": "During a Sprint, when is new work or further decomposition of work added to the Sprint Backlog?",
@@ -1268,7 +1380,8 @@
       "D": "During the Daily Scrum after the Developers approves them."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 113
   },
   {
     "question": "What is the main reason for the Scrum Master to be at the Daily Scrum?",
@@ -1279,7 +1392,8 @@
       "D": "To make sure every team member answers the three questions."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 114
   },
   {
     "question": "You have six teams using a traditional method to deliver a product. Your management has asked you to start using Scrum. In the initial project there were separate plans and teams for the layers of a software system, i.e. one for the frontend, one for the middle tier, one for the back-end, and one for the interfaces and services. This resembles what is known as component teams. But you have read that it's a good idea to have teams organized by feature. What are the advantages of keeping component teams while starting Scrum?",
@@ -1290,7 +1404,8 @@
       "D": "There are fewer cross-team dependencies than working in feature teams."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 115
   },
   {
     "question": "True or False: A properly functioning Scrum Team will have at least one Release Sprint and may well have several.",
@@ -1299,7 +1414,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 116
   },
   {
     "question": "True or False: Scrum is a methodology that tells in detail how to build software incrementally.",
@@ -1308,7 +1424,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 117
   },
   {
     "question": "For which is the Scrum Master responsible?",
@@ -1319,7 +1436,8 @@
       "D": "Keeping track of resource allocation."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 118
   },
   {
     "question": "The Developers asks their Product Owner to re-order the Product Backlog. The team is waiting for an external supplier to deliver a specific software component. Without that component there won't be enough work in the next Sprint to occupy the full team. The Product Owner asks the Scrum Master for help. What would be good advice to give the Product Owner?",
@@ -1329,7 +1447,8 @@
       "C": "Tell the Product Owner that the Product Backlog should be ordered to maximize utilization of the Developers."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 119
   },
   {
     "question": "What are three ways Scrum promotes self-management? (choose three)",
@@ -1341,7 +1460,8 @@
       "E": "By being a lightweight framework."
     },
     "answer": "B,D,E",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 120
   },
   {
     "question": "What is the key concern when multiple Scrum Teams are working from the same Product Backlog?",
@@ -1353,7 +1473,8 @@
       "E": "Maximizing velocity."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 121
   },
   {
     "question": "What does it mean to say that an event has a time-box?",
@@ -1364,7 +1485,8 @@
       "D": "The event can take no more than a maximum amount of time."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 122
   },
   {
     "question": "Which outcome is expected as Scrum Teams mature?",
@@ -1376,7 +1498,8 @@
       "E": "A Scrum Master is no longer needed since they are a mature team now."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 123
   },
   {
     "question": "The Product Owner must release each Increment to production.",
@@ -1387,7 +1510,8 @@
       "D": "Without exception."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 124
   },
   {
     "question": "Who creates the Definition of Done?",
@@ -1398,7 +1522,8 @@
       "D": "The development organization (or Developers if none is available from the development organization)."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 125
   },
   {
     "question": "Five new Scrum Teams have been created to build one product. A few of the Developers on one of the Scrum Teams ask the Scrum Master how to coordinate their work with the order teams. What should the Scrum Master do?",
@@ -1409,7 +1534,8 @@
       "D": "Visit the five teams each day to inspect that their Sprint Backlogs are aligned."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 126
   },
   {
     "question": "Which two things should the Developers do during the first Sprint? (choose two)",
@@ -1421,7 +1547,8 @@
       "E": "Create an Increment of potentially releasable software."
     },
     "answer": "C,E",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 127
   },
   {
     "question": "Who determines when it is appropriate to update the Sprint Backlog during a Sprint?",
@@ -1432,7 +1559,8 @@
       "D": "The Product Owner."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 128
   },
   {
     "question": "Who must attend the Daily Scrum?",
@@ -1444,7 +1572,8 @@
       "E": "The Developers and Scrum Master."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 129
   },
   {
     "question": "When do Developers take ownership of a Sprint Backlog item?",
@@ -1455,7 +1584,8 @@
       "D": "Whenever a team member can accommodate more work."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 130
   },
   {
     "question": "True or False: The purpose of a Sprint is to produce a done Increment of product.",
@@ -1464,7 +1594,8 @@
       "B": "False."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 131
   },
   {
     "question": "In the Sprint Planning meeting, the Product Owner and the Developers were unable to reach a clear understanding about the highest order Product Backlog items. Because of this, the Developers couldn't figure out how many Product Backlog items it could forecast for the upcoming Sprint. They were able to agree on a Sprint Goal, however. Which of the following two actions should the Scrum Master support? (choose two)",
@@ -1476,7 +1607,8 @@
       "E": "Ask everyone to take as much time as needed to analyze the Product Backlog first, and then reconvene another Sprint Planning meeting."
     },
     "answer": "B,D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 132
   },
   {
     "question": "Which answer best describes the topics covered in Sprint Planning?",
@@ -1488,7 +1620,8 @@
       "E": "Who is on the team and what team member roles will be."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Sprint / Planning",
+    "id": 133
   },
   {
     "question": "Which of the following is required by Scrum? (choose all that apply)",
@@ -1500,7 +1633,8 @@
       "E": "All of the above."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 134
   },
   {
     "question": "What is the purpose of a Sprint Review?",
@@ -1511,7 +1645,8 @@
       "D": "To build team sprint."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 135
   },
   {
     "question": "How should the Developers deal with non-functional requirements?",
@@ -1522,7 +1657,8 @@
       "D": "Assign them to the lead Developers on the team."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 136
   },
   {
     "question": "When is a Sprint over?",
@@ -1533,7 +1669,8 @@
       "D": "When the time-box expires."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 137
   },
   {
     "question": "True or False: Scrum has a role called \"Project Manager\".",
@@ -1542,7 +1679,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 138
   },
   {
     "question": "Which Scrum Values are violated by building Product Backlog items that have low business value?",
@@ -1554,7 +1692,8 @@
       "E": "Earned Value."
     },
     "answer": "A,B,C",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 139
   },
   {
     "question": "How much time is required after a Sprint to prepare for the next Sprint?",
@@ -1566,7 +1705,8 @@
       "E": "All of the above are allowed depending on the situation."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 140
   },
   {
     "question": "When many Scrum Teams are working on the same product, should all of their Increments be integrated every Sprint?",
@@ -1577,7 +1717,8 @@
       "D": "No, that is far too hard and must be done in a hardening Sprint."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 141
   },
   {
     "question": "When can the Developers cancel a Sprint?",
@@ -1589,7 +1730,8 @@
       "E": "When a technical dependency cannot be resolved."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 142
   },
   {
     "question": "Which output from Sprint Planning provides the Developers with a target and overarching direction for the Sprint?",
@@ -1600,7 +1742,8 @@
       "D": "Sprint Review minutes."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Sprint / Planning",
+    "id": 143
   },
   {
     "question": "During the Sprint Retrospective a Scrum Team has identified several high priority process improvements. Which of the following statements is most accurate? (choose the best answer)",
@@ -1611,7 +1754,8 @@
       "D": "The Scrum Master selects the most important process improvement and places it in the Sprint Backlog."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 144
   },
   {
     "question": "What techniques could the Scrum Master use when the Scrum Team gets caught in an internal disagreement about which agile practices to apply? (choose the best two answers)",
@@ -1622,7 +1766,8 @@
       "D": "Ask team members to take the issue up with to the company's Human Resources department."
     },
     "answer": "A,B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 145
   },
   {
     "question": "Who is accountable for clearly expressing Product Backlog items? (choose the best answer)",
@@ -1633,7 +1778,8 @@
       "D": "The Scrum Master."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 146
   },
   {
     "question": "When many Scrum Teams are working on a single product, what best describes the Definition of Done? (choose the best answer)",
@@ -1644,7 +1790,8 @@
       "D": "All Scrum Teams must have a Definition of Done that makes their combined work potentially releasable."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 147
   },
   {
     "question": "When many Developers are working on a single product, what best describes the Definition of Done? (choose the best answer)",
@@ -1655,7 +1802,8 @@
       "D": "All Developers must have a Definition of Done that makes their combined work potentially releasable."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 148
   },
   {
     "question": "At the seventh Sprint Review, the stakeholders are disappointed and angry. They have determined that the product or system being built will not meet their needs and will cost more than they are willing to spend. What factors likely led to this? (choose two)",
@@ -1666,7 +1814,8 @@
       "D": "The stakeholders were not allowed to enter the development area."
     },
     "answer": "B,C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 149
   },
   {
     "question": "When a Scrum Team determines that it will not be able to finish the complete forecast, who has to be present when reviewing and adjusting the Sprint work selected? (choose the best answer)",
@@ -1677,7 +1826,8 @@
       "D": "The Scrum Master, project manager and Developers."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 150
   },
   {
     "question": "As the Scrum Team starts work during the Sprint, it realizes it has selected too much work to finish in the Sprint. What should it do?",
@@ -1688,7 +1838,8 @@
       "D": "Reduce the Definition of Done and get all of the Product Backlog items \"Done\" by the new definition."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 151
   },
   {
     "question": "Which of the following are roles on a Scrum Team? (choose all that apply)",
@@ -1700,7 +1851,8 @@
       "E": "Customers."
     },
     "answer": "B,C,D",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 152
   },
   {
     "question": "Which two activities will a Product Owner engage in during a Sprint? (choose two)",
@@ -1712,7 +1864,8 @@
       "E": "Work with the stakeholders."
     },
     "answer": "D,E",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 153
   },
   {
     "question": "What are two good ways for the Developers to make non-functional requirements visible? (choose two)",
@@ -1723,7 +1876,8 @@
       "D": "Add them to the Definition of Done so the work is taken care of every Sprint."
     },
     "answer": "B,D",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 154
   },
   {
     "question": "Which three questions might be answered by Developers at the Daily Scrum? (choose three)",
@@ -1737,7 +1891,8 @@
       "G": "Do I see any impediment that prevents me or the Developers from meeting the Sprint Goal?"
     },
     "answer": "B,D,G",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 155
   },
   {
     "question": "What activities would a Product Owner typically undertake in the phase between the end of the current Sprint and the start of the next Sprint?",
@@ -1748,7 +1903,8 @@
       "D": "Update the project plan with stakeholders."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 156
   },
   {
     "question": "When does a Developer become accountable for the value of a Product Backlog item selected for the Sprint?",
@@ -1759,7 +1915,8 @@
       "D": "At the Sprint Planning Event."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 157
   },
   {
     "question": "Every Developer should have:",
@@ -1769,7 +1926,8 @@
       "C": "One Lead Developer and no more than 8 other members."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 158
   },
   {
     "question": "Which best describes the Product Backlog?",
@@ -1780,7 +1938,8 @@
       "D": "It is baselined to follow change management processes."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 159
   },
   {
     "question": "Who has the final decision about the order of items in the Product Backlog? (choose the best answer)",
@@ -1792,7 +1951,8 @@
       "E": "The Developers."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 160
   },
   {
     "question": "Which are properties of the Daily Scrum? (choose two)",
@@ -1805,7 +1965,8 @@
       "F": "Its location and time remain constant."
     },
     "answer": "C,F",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 161
   },
   {
     "question": "What is the accountability of the Product Owner during Sprint 0? (choose the best answer)",
@@ -1817,7 +1978,8 @@
       "E": "Make sure enough Product Backlog items are refined to fill the first 3 Sprints."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 162
   },
   {
     "question": "In accordance with Scrum theory, how should a group of 100 people be divided into multiple Scrum Teams?",
@@ -1828,7 +1990,8 @@
       "D": "Create a matrix of skills, seniority, and level of experience to assign people to teams."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 163
   },
   {
     "question": "Who is accountable for tracking the remaining work toward the Sprint Goal? (choose the best answer)",
@@ -1839,7 +2002,8 @@
       "D": "The Project Manager."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 164
   },
   {
     "question": "When must a Product Owner release each Increment? (choose the best answer)",
@@ -1850,7 +2014,8 @@
       "D": "After every Sprint, Without exception."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 165
   },
   {
     "question": "What are two good ways for a Scrum Team to ensure security concerns are satisfied? (choose two)",
@@ -1862,7 +2027,8 @@
       "E": "Have the Scrum Team create Product Backlog items for each concern."
     },
     "answer": "B,E",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 166
   },
   {
     "question": "What is the recommended size for a Scrum Team? (choose the best answer)",
@@ -1873,7 +2039,8 @@
       "D": "7 plus or minus 3."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 167
   },
   {
     "question": "How do you know that a Scrum Team is cross-functional?",
@@ -1884,7 +2051,8 @@
       "D": "Every member of the Scrum Team is able to perform every task."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 168
   },
   {
     "question": "Select two ways in which technical debt impacts transparency. (choose two)",
@@ -1895,7 +2063,8 @@
       "D": "It enhances transparency for the Product Owner as a Developers are not allowed to do additional feature development in a Sprint as long as there is technical debt."
     },
     "answer": "B,C",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 169
   },
   {
     "question": "The Developers are required to deliver a done Increment by the end of a Sprint. Select two statements that explain what \"Done\" means. (choose two)",
@@ -1907,7 +2076,8 @@
       "E": "All work to create software that is ready to be released to end users."
     },
     "answer": "C,E",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 170
   },
   {
     "question": "Which of the following are true about the length of the Sprint? (choose two)",
@@ -1919,7 +2089,8 @@
       "E": "All Sprints must be 1 month or less."
     },
     "answer": "B,E",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 171
   },
   {
     "question": "What may be included in the Sprint Backlog? (choose the best answer)",
@@ -1931,7 +2102,8 @@
       "E": "Any of the above (or others) which are a decomposition of the selected Product Backlog items."
     },
     "answer": "E",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 172
   },
   {
     "question": "Developers include which role(s)?",
@@ -1942,7 +2114,8 @@
       "D": "Software Architects."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 173
   },
   {
     "question": "The Sprint Backlog must be detailed enough that...",
@@ -1953,7 +2126,8 @@
       "D": "stakeholders can monitor progress at task level."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 174
   },
   {
     "question": "True or False: The Scrum Master is accountable for the Product Backlog.",
@@ -1962,7 +2136,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 175
   },
   {
     "question": "True or False: A Scrum Team uses 2 weeks Sprints and time box their Sprint Planning to 6 hours. Does this break the rules of Scrum?",
@@ -1971,7 +2146,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Sprint / Planning",
+    "id": 176
   },
   {
     "question": "Who is accountable for ensuring that the burn-down chart and gantt chart exist?",
@@ -1982,7 +2158,8 @@
       "D": "The Scrum Master."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 177
   },
   {
     "question": "True or False: By the end of the Sprint Retrospective, the Scrum Team should have identified and planned improvements to increase its effectiveness.",
@@ -1991,7 +2168,8 @@
       "B": "False."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 178
   },
   {
     "question": "The Scrum Master is a leader and servant in service to which of the following?",
@@ -2001,7 +2179,8 @@
       "C": "The Developers."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 179
   },
   {
     "question": "The Product Owner manages...",
@@ -2012,7 +2191,8 @@
       "D": "the Product Backlog."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 180
   },
   {
     "question": "Management need to monitor progress on a daily basis and decide to do so by attending the Daily Scrum. What are the likely results? (choose three)",
@@ -2023,7 +2203,8 @@
       "D": "Developers may be less open and transparent during the Daily Scrum."
     },
     "answer": "B,C,D",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 181
   },
   {
     "question": "True or False: The Product Owner must attend the Sprint Retrospective.",
@@ -2032,7 +2213,8 @@
       "B": "False."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 182
   },
   {
     "question": "True or False: A Scrum Team must only work on a single Product Goal at any time.",
@@ -2041,7 +2223,8 @@
       "B": "False."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 183
   },
   {
     "question": "True or False: The Definition of Done is a mandatory part of Scrum.",
@@ -2050,7 +2233,8 @@
       "B": "False."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 184
   },
   {
     "question": "True or False: The Scrum Master must facilitate the Daily Scrum.",
@@ -2059,7 +2243,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 185
   },
   {
     "question": "Among the Developers, there is nobody with significant testing expertise. They should...",
@@ -2070,7 +2255,8 @@
       "D": "quality is the responsibility of the Developers and they should undertake testing themselves to the best of their abilities."
     },
     "answer": "C,D",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 186
   },
   {
     "question": "True or False: The Sprint Planning event is comprised of 2 parts and the Product Owner is not needed at the 2nd part.",
@@ -2079,7 +2265,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Sprint / Planning",
+    "id": 187
   },
   {
     "question": "Product Backlog refinement is...",
@@ -2090,7 +2277,8 @@
       "D": "an ongoing process in which the Product Owner and the Developers collaborate."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 188
   },
   {
     "question": "An Increment is...",
@@ -2101,7 +2289,8 @@
       "D": "the sum of the Done work during a Sprint, plus the work Done in earlier Sprints."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 189
   },
   {
     "question": "Which statement best describes a cross-functional team?",
@@ -2111,7 +2300,8 @@
       "C": "All members of the team have all the skills required to create the Product."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 190
   },
   {
     "question": "The result of the Sprint Review is...",
@@ -2122,7 +2312,8 @@
       "D": "acceptance (or rejection) of all Product Backlog Items."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 191
   },
   {
     "question": "The Product Owner is using burn-up charts instead of burn-down charts. What would your response be as Scrum Master?",
@@ -2131,7 +2322,8 @@
       "B": "Burn-up charts are used in traditional methods and should be replaced by burn-down charts."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 192
   },
   {
     "question": "True or False: The Scrum Master manages the Scrum Team.",
@@ -2140,7 +2332,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 193
   },
   {
     "question": "The Scrum Master is responsible for?",
@@ -2151,7 +2344,8 @@
       "D": "Coordinating the work of the Developers."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 194
   },
   {
     "question": "A Scrum Team has how many specific accountabilities?",
@@ -2162,7 +2356,8 @@
       "D": "3."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 195
   },
   {
     "question": "Who is responsible for monitoring the progress of work during a Sprint?",
@@ -2173,7 +2368,8 @@
       "D": "Developers."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 196
   },
   {
     "question": "True or False: During Sprint Planning, every task must be estimated so the Developers can be sure they have the capacity to complete them in the Sprint.",
@@ -2182,7 +2378,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Sprint / Planning",
+    "id": 197
   },
   {
     "question": "Who may be best positioned to decide who will be the Scrum Master for a new Scrum Team?",
@@ -2193,7 +2390,8 @@
       "D": "Stakeholders."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 198
   },
   {
     "question": "The Daily Scrum is consistently taking longer than 15 minutes. Which statement best describes what should be done?",
@@ -2204,7 +2402,8 @@
       "D": "The Developers should take the additional time that they need in the Daily Scrum."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 199
   },
   {
     "question": "True or False: A Scrum Team must be 10 or fewer people.",
@@ -2213,7 +2412,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 200
   },
   {
     "question": "True or False: A Scrum Team must never have any technical debt.",
@@ -2222,7 +2422,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 201
   },
   {
     "question": "True or False: During Sprint Planning, all Product Backlog Items must be decomposed to a definitive set of tasks for the Developers to complete.",
@@ -2231,7 +2432,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 202
   },
   {
     "question": "True or False: The Increment must be released at the end of every Sprint.",
@@ -2240,7 +2442,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 203
   },
   {
     "question": "True or False: Developers should be set stretch goals by the Product Owner as part of Sprint Planning.",
@@ -2249,7 +2452,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 204
   },
   {
     "question": "True or False: During the Daily Scrum, the Developers must answer the \"3 questions\".",
@@ -2258,7 +2462,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 205
   },
   {
     "question": "Select the correct timebox for each Scrum event.",
@@ -2269,7 +2474,8 @@
       "D": "Sprint Planning - 8 hours, Daily Scrum - 15 minutes, Sprint Review - 4 hours, Sprint Retrospective - 3 hours."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 206
   },
   {
     "question": "True or False: The Scrum Master can be removed once Scrum is adopted.",
@@ -2278,7 +2484,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 207
   },
   {
     "question": "Who can do the work to ensure the Product Backlog is refined to a state that it is useful?",
@@ -2289,7 +2496,8 @@
       "D": "The Product Owner."
     },
     "answer": "C,D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 208
   },
   {
     "question": "The purpose of the Sprint Review is...",
@@ -2300,7 +2508,8 @@
       "D": "to check what was done and not done during the Sprint."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 209
   },
   {
     "question": "Who can change the Sprint Backlog during a Sprint?",
@@ -2311,7 +2520,8 @@
       "D": "The Stakeholders."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 210
   },
   {
     "question": "True or False: Before the first Sprint, the Product Backlog must contain everything we will develop for the product.",
@@ -2320,7 +2530,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 211
   },
   {
     "question": "A Product Backlog is never complete.",
@@ -2329,7 +2540,8 @@
       "B": "True - As long as a product exists, its Product Backlog also exists."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 212
   },
   {
     "question": "What does the Sprint burn-down chart show?",
@@ -2340,7 +2552,8 @@
       "D": "How much work remains until the end of the Sprint."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 213
   },
   {
     "question": "A new Developer joins the Scrum Team taking the total number to 11 people. As a Scrum Master, What should you do?",
@@ -2351,7 +2564,8 @@
       "D": "Raise the increased team size as a potential issue and help the Developers decide what to do about it."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 214
   },
   {
     "question": "Which technique is the best way the Scrum Master can ensure that the Developers communicate effectively with the Product Owner?",
@@ -2362,7 +2576,8 @@
       "D": "Teach the Product Owner about the technologies employed during the Sprints."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 215
   },
   {
     "question": "Which two things should the Scrum Team do during the first Sprint? (choose the best two answers)",
@@ -2373,7 +2588,8 @@
       "D": "Create the complete Product Backlog to be developed in subsequent Sprints."
     },
     "answer": "A,B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 216
   },
   {
     "question": "Who is on the Scrum Team?(choose the best three answers)",
@@ -2384,7 +2600,8 @@
       "D": "Developers."
     },
     "answer": "A,C,D",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 217
   },
   {
     "question": "The timebox for a Daily Scrum is?",
@@ -2396,7 +2613,8 @@
       "E": "The same time of day every day."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 218
   },
   {
     "question": "The three pillars of empiricism are:",
@@ -2408,7 +2626,8 @@
       "E": "Transparency, Eliminating Waste, Kaizen."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 219
   },
   {
     "question": "What does it mean to say that an event has a timebox?",
@@ -2419,7 +2638,8 @@
       "D": "The event can take no more than a maximum amount of time."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 220
   },
   {
     "question": "Upon what type of process control is Scrum based?",
@@ -2430,7 +2650,8 @@
       "D": "Complex."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 221
   },
   {
     "question": "True or False: It is mandatory that the product Increment be released to production at the end of each Sprint.",
@@ -2439,7 +2660,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 222
   },
   {
     "question": "The timebox for the Sprint Review is:",
@@ -2451,7 +2673,8 @@
       "E": "As long as needed."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 223
   },
   {
     "question": "Which statement best describes a Product Owner's responsibility?",
@@ -2462,7 +2685,8 @@
       "D": "Directing the Developers."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 224
   },
   {
     "question": "Why is the Daily Scrum held at the same time and same place?",
@@ -2473,7 +2697,8 @@
       "D": "The Product Owner demands it."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 225
   },
   {
     "question": "A Scrum Team consists of the following:(choose the best three answers)",
@@ -2485,7 +2710,8 @@
       "E": "Scrum Master."
     },
     "answer": "B,D,E",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 226
   },
   {
     "question": "True or False: The purpose of a Sprint is to produce a valuable and useful Increment of working product.",
@@ -2494,7 +2720,8 @@
       "B": "False."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 227
   },
   {
     "question": "The timebox for the Sprint Planning event is?",
@@ -2505,7 +2732,8 @@
       "D": "Whenever itis done."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Sprint / Planning",
+    "id": 228
   },
   {
     "question": "What is the main reason for the Scrum Master to be at the Daily Scrum?",
@@ -2516,7 +2744,8 @@
       "D": "To make sure every team member answers the three questions"
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 229
   },
   {
     "question": "What is the function or purpose of Management in Scrum?",
@@ -2527,7 +2756,8 @@
       "D": "Continually monitor staffing levels of the Scrum Team."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 230
   },
   {
     "question": "When does a Developer become the sole owner of an item on the Sprint Backlog?",
@@ -2538,7 +2768,8 @@
       "D": "During the Daily Scrum"
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 231
   },
   {
     "question": "What is the typical size for a Scrum Team?",
@@ -2549,7 +2780,8 @@
       "D": "9"
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 232
   },
   {
     "question": "An organization has decided to adopt Scrum, but management wants to change the terminology to fit with terminology already used. What will likely happen if this is done?",
@@ -2560,7 +2792,8 @@
       "D": "Al of the above"
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 233
   },
   {
     "question": "Which of the following are examples of a Scrum Team practicing Scrum poorly or not exhibiting traits of a self-managing Scrum Team?",
@@ -2573,7 +2806,8 @@
       "F": "The Developers are working within the boundaries of their organizations functional description and nicely handing off work from analyst to Developer to tester to integration"
     },
     "answer": "B,E,F",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 234
   },
   {
     "question": "Who is required to attend the Daily Scrum?",
@@ -2585,7 +2819,8 @@
       "E": "The Scrum Team"
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 235
   },
   {
     "question": "How much work must the Developers complete for each Product Backlog item they select for a Sprint?",
@@ -2596,7 +2831,8 @@
       "D": "As much as it can fit into the Sprint"
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 236
   },
   {
     "question": "During a Sprint, a Developer determines that the Scrum Team will not be able to complete the items in their forecast. Who should be present to review and adjust the Product Backlog items selected?",
@@ -2607,7 +2843,8 @@
       "D": "The Developers."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 237
   },
   {
     "question": "Who has the final say on the order of the Product Backlog?",
@@ -2619,7 +2856,8 @@
       "E": "The Stakeholders"
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 238
   },
   {
     "question": "Who should know the most about the progress toward a business objective or a release, and be able to explain the alternatives most clearly?",
@@ -2630,7 +2868,8 @@
       "D": "The Scrum Master"
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Theory",
+    "id": 239
   },
   {
     "question": "Which of the following services is appropriate for a Scrum Master in regard to the Daily Scrum?",
@@ -2642,7 +2881,8 @@
       "E": "Ensure that all 3 questions have been answered"
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 240
   },
   {
     "question": "The Developers should not be interrupted during the Sprint and the Sprint Goal should remain intact. These are conditions that foster creativity, quality and productivity. Which one of the following answers is FALSE?",
@@ -2653,7 +2893,8 @@
       "D": "As a decomposition of the selected Product Backlog items, the Sprint Backlog changes and may grow as the work emerges."
     },
     "answer": "C",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 241
   },
   {
     "question": "When does the next Sprint begin?",
@@ -2664,7 +2905,8 @@
       "D": "When the Product Owner is ready."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 242
   },
   {
     "question": "What are two ways a Scrum Master serves to enable effective Scrum Teams?",
@@ -2675,7 +2917,8 @@
       "D": "By starting and ending the meetings at the proper time."
     },
     "answer": "A,C",
-    "category": "NA"
+    "category": "Scrum Roles",
+    "id": 243
   },
   {
     "question": "True or False: When multiple Scrum Teams work together on the same product, each team should maintain a separate Product Backlog.",
@@ -2684,7 +2927,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 244
   },
   {
     "question": "When should a Developer on a Scrum Team be replaced?",
@@ -2695,7 +2939,8 @@
       "D": "Never, it reduces productivity."
     },
     "answer": "A",
-    "category": "NA"
+    "category": "Team Behavior",
+    "id": 245
   },
   {
     "question": "Which are characteristics of the Daily Scrum? (choose the best two answers)",
@@ -2707,7 +2952,8 @@
       "E": "Its location and time remain constant."
     },
     "answer": "C,E",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 246
   },
   {
     "question": "True or False: The Scrum Team must choose at least one high priority process improvement item, identified during the Sprint Retrospective, and place it in the Sprint Backlog.",
@@ -2716,7 +2962,8 @@
       "B": "False."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 247
   },
   {
     "question": "When does a Sprint conclude?",
@@ -2727,7 +2974,8 @@
       "D": "When all Product Backlog items meet their Definition of Done."
     },
     "answer": "B",
-    "category": "NA"
+    "category": "Scrum Events",
+    "id": 248
   },
   {
     "question": "When must a Scrum Team release each Increment?",
@@ -2738,7 +2986,8 @@
       "D": "When it makes sense to release it."
     },
     "answer": "D",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 249
   },
   {
     "question": "Which of the following is an example of an Increment?",
@@ -2751,6 +3000,7 @@
       "F": "All of the above."
     },
     "answer": "E",
-    "category": "NA"
+    "category": "Scrum Artifacts",
+    "id": 250
   }
 ]
