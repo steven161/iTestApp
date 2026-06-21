@@ -72,9 +72,11 @@ const app = {
     const dashboardView = document.getElementById("dashboard-view");
     if (dashboardView) {
       const btns = dashboardView.querySelectorAll("button");
-      if (btns[0]) btns[0].addEventListener("click", () => this.startNewTest());
-      if (btns[1])
-        btns[1].addEventListener("click", () => this.showStatsView());
+      if (btns[0])
+        btns[0].addEventListener("click", () => this.startNextTest());
+      if (btns[1]) btns[1].addEventListener("click", () => this.startNewTest());
+      if (btns[2])
+        btns[2].addEventListener("click", () => this.showStatsView());
     }
 
     // Results view buttons
@@ -262,6 +264,26 @@ const app = {
 
     this.showTestView();
     this.displayQuestion();
+  },
+  // Start Next test
+  startNextTest() {
+    const startIndexInput = document.getElementById("startIndexInput");
+    const questionCountInput = document.getElementById("questionCountInput");
+
+    if (!startIndexInput || !questionCountInput) {
+      this.startNewTest();
+      return;
+    }
+
+    const startIndex = parseInt(startIndexInput.value, 10) || 1;
+    const questionCount =
+      parseInt(questionCountInput.value, 10) || this.questionCount;
+    const nextStartIndex = startIndex + questionCount;
+
+    startIndexInput.value = nextStartIndex;
+    this.startQuestionIndex = nextStartIndex;
+    this.startNewTest();
+    //alert("startNextTest");
   },
 
   // Shuffle choices while tracking correct answer
