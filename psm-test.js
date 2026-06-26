@@ -288,7 +288,6 @@ const app = {
     startIndexInput.value = nextStartIndex;
     this.startQuestionIndex = nextStartIndex;
     this.startNewTest();
-    //alert("startNextTest");
   },
 
   // Shuffle choices while tracking correct answer
@@ -842,32 +841,8 @@ const app = {
 
                 ${wrongAnswersHTML}
 
-                <h5 class="mt-5 mb-3">Test History (${this.stats.testHistory.length})</h5>
-                <div class="table-responsive">
-                    <table class="table table-sm table-hover">
-                        <thead class="table-light">
-                            <tr>
-                                <th>Date</th>
-                                <th>Time</th>
-                                <th>Score</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${this.stats.testHistory
-                              .map(
-                                (test) => `
-                                <tr>
-                                    <td>${test.date}</td>
-                                    <td>${test.time}</td>
-                                    <td>${test.score}/${test.total}</td>
-                                    <td><span class="badge ${test.score >= 7 ? "bg-success" : "bg-warning"}">${test.score >= 7 ? "Pass" : "Fail"}</span></td>
-                                </tr>
-                            `,
-                              )
-                              .join("")}
-                        </tbody>
-                    </table>
+                <div class="test-history-section mt-5">
+                    ${this.buildTestHistoryHTML(this.stats.testHistory, false)}
                 </div>
             </div>
         `;
@@ -881,6 +856,9 @@ const app = {
     }
 
     this.bindStatsCopyButtons(container, stats.wrongAnswers);
+    
+    // Attach toggle listener for test history
+    this.attachTestHistoryToggleListener(this.stats.testHistory);
 
     window.scrollTo(0, 0);
   },
@@ -976,36 +954,15 @@ const app = {
 
             ${wrongAnswersHTML}
 
-            <h5 class="mt-5 mb-3">Test History (${this.stats.testHistory.length})</h5>
-            <div class="table-responsive">
-                <table class="table table-sm table-hover">
-                    <thead class="table-light">
-                        <tr>
-                            <th>Date</th>
-                            <th>Time</th>
-                            <th>Score</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${this.stats.testHistory
-                          .map(
-                            (test) => `
-                            <tr>
-                                <td>${test.date}</td>
-                                <td>${test.time}</td>
-                                <td>${test.score}/${test.total}</td>
-                                <td><span class="badge ${test.score >= 7 ? "bg-success" : "bg-warning"}">${test.score >= 7 ? "Pass" : "Fail"}</span></td>
-                            </tr>
-                        `,
-                          )
-                          .join("")}
-                    </tbody>
-                </table>
+            <div class="test-history-section mt-5">
+                ${this.buildTestHistoryHTML(this.stats.testHistory, false)}
             </div>
         `;
 
     this.bindStatsCopyButtons(container, stats.wrongAnswers);
+    
+    // Attach toggle listener for test history
+    this.attachTestHistoryToggleListener(this.stats.testHistory);
   },
 
   // Clear statistics
@@ -1089,6 +1046,84 @@ const app = {
     if (saved) {
       this.stats = JSON.parse(saved);
     }
+  },
+
+  // Build test history table HTML with optional truncation
+  buildTestHistoryHTML(testHistory, showAll = false) {
+    if (!testHistory || testHistory.length === 0) {
+      return '<p class="text-center text-muted">No test history in this period.</p>';
+    }
+
+    // Apply truncation if showAll is false
+    const displayedTests = showAll ? testHistory : testHistory.slice(0, 5);
+    const totalCount = testHistory.length;
+    const displayedCount = displayedTests.length;
+
+    let html = `
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="mb-0">Test History (${displayedCount}${!showAll && displayedCount < totalCount ? ' of ' + totalCount : ''})</h5>
+                ${totalCount > 5 ? `
+                <button type="button" class="btn btn-sm btn-outline-info toggle-test-history-btn" data-show-all="${showAll}" title="${showAll ? 'Show only top 5' : 'Show all tests'}">
+                  ${showAll ? 'Show Less' : 'Show All'}
+                </button>
+                ` : ''}
+            </div>
+            <div class="table-responsive">
+                <table class="table table-sm table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Score</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${displayedTests
+                          .map(
+                            (test) => `
+                            <tr>
+                                <td>${test.date}</td>
+                                <td>${test.time}</td>
+                                <td>${test.score}/${test.total}</td>
+                                <td><span class="badge ${test.score >= 7 ? "bg-success" : "bg-warning"}">${test.score >= 7 ? "Pass" : "Fail"}</span></td>
+                            </tr>
+                        `,
+                          )
+                          .join("")}
+                    </tbody>
+                </table>
+            </div>
+            <div class="test-history-state-holder" data-show-all="${showAll}" data-total="${totalCount}" style="display: none;"></div>
+        `;
+
+    return html;
+  },
+
+  // Handle test history toggle button clicks
+  attachTestHistoryToggleListener(testHistory) {
+    const toggleButton = document.querySelector('.toggle-test-history-btn');
+    const stateHolder = document.querySelector('.test-history-state-holder');
+
+    if (!toggleButton) return;
+
+    const currentShowAll = stateHolder ? stateHolder.dataset.showAll === 'true' : false;
+
+    toggleButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      const newShowAll = !currentShowAll;
+
+      // Re-render with toggled state
+      const html = this.buildTestHistoryHTML(testHistory, newShowAll);
+
+      // Update the test history section
+      const section = document.querySelector('.test-history-section');
+      if (section) {
+        section.innerHTML = html;
+        // Re-attach the toggle listener for the newly rendered button
+        this.attachTestHistoryToggleListener(testHistory);
+      }
+    });
   },
 };
 

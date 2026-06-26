@@ -339,3 +339,166 @@ textarea:focus {
     border-color: #f44336;
     color: #c62828;
 }
+
+/* Grouped Statistics Display */
+.sort-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.sort-btn:hover {
+    background-color: #1abc9c;
+    color: white;
+    border-color: #1abc9c;
+}
+
+.sort-btn.active {
+    background-color: #1abc9c;
+    color: white;
+    border-color: #1abc9c;
+}
+
+/* Severity badges for wrong counts */
+.badge.bg-danger-severe {
+    background-color: #d63031 !important;
+    font-size: 0.85rem;
+}
+
+.badge.bg-warning-high {
+    background-color: #e9c46a !important;
+    font-size: 0.85rem;
+    color: #333 !important;
+}
+
+/* Grouped accordion styling */
+#groupedWrongAnswersAccordion .accordion-button {
+    padding: 1rem 1.25rem;
+    font-weight: 500;
+}
+
+#groupedWrongAnswersAccordion .accordion-button:not(.collapsed) {
+    background-color: #e0f7fa;
+    color: #1abc9c;
+}
+
+#groupedWrongAnswersAccordion .accordion-body {
+    padding: 1.5rem;
+}
+
+/* Card styling for grouped attempts */
+.card.card-sm {
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+}
+
+.card.card-sm .card-body {
+    padding: 0.75rem 1rem !important;
+}
+
+.card.card-sm .card-body small {
+    display: block;
+    line-height: 1.3;
+}
+
+/* Text size adjustment for grouped view */
+.text-sm {
+    font-size: 0.9rem;
+}
+
+h7 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Wrong count badge styling */
+.badge-wrong-count {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+    font-weight: 600;
+}
+
+/* Latest date styling */
+.latest-date {
+    font-size: 0.85rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+/* Sort button group spacing */
+.btn-group-sm {
+    gap: 0.5rem;
+}
+
+/* Test Button Grid Styling */
+.test-button-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.test-button-grid .test-range-btn {
+    padding: 0.8rem 1rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    border: none;
+    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(26, 188, 156, 0.2);
+}
+
+.test-button-grid .test-range-btn:hover {
+    background: linear-gradient(135deg, #16a085 0%, #0d7a77 100%);
+    box-shadow: 0 4px 12px rgba(13, 122, 119, 0.3);
+    transform: translateY(-2px);
+}
+
+.test-button-grid .test-range-btn:active {
+    transform: translateY(0);
+}
+
+.test-button-grid .test-range-btn.completed-range {
+    background: linear-gradient(135deg, #00ffff 0%, #ffff00 100%);
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.test-button-grid .test-range-btn.completed-range:hover {
+    background: linear-gradient(135deg, #20c997 0%, #17a2b8 100%);
+    box-shadow: 0 4px 12px rgba(23, 162, 184, 0.4);
+    transform: translateY(-2px);
+}
+
+.test-button-grid .test-range-btn.completed-range:active {
+    transform: translateY(0);
+}
+
+/* Responsive grid for smaller screens */
+@media (max-width: 768px) {
+    .test-button-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .test-button-grid .test-range-btn {
+        padding: 0.7rem 0.9rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .test-button-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .test-button-grid .test-range-btn {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}

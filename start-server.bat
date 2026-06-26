@@ -23,6 +23,14 @@ if %errorlevel% equ 0 (
 )
 
 REM Start Python HTTP server
+echo.
+echo Opening http://localhost:8080/index.html in your browser...
+echo.
+echo To stop the server, run: stop-server.bat
+echo.
+
+start http://localhost:8080/index.html
+
 python -m http.server 8080
 
 if %errorlevel% neq 0 (
@@ -33,5 +41,3 @@ if %errorlevel% neq 0 (
     pause
     exit /b 1
 )
-
-pause
